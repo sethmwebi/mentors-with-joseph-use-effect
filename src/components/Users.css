@@ -1,11 +1,8 @@
-.container {
+.users-container {
   width: 800px;
   display: flex;
   justify-self: center;
+  gap: 12px;
   flex-direction: column;
-}
-
-.container > .title {
-  text-align: center;
-  font-weight: bold;
+  margin-top: 20px;
 }
