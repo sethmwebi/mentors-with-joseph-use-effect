@@ -63,6 +63,7 @@ import Posts from "./components/Posts";
 import Users from "./components/Users";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import SinglePost from "./components/SinglePost";
 
 export default function App() {
   const [posts, setPosts] = useState([]);
@@ -84,8 +85,8 @@ export default function App() {
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<Users />} path="/users" />
-
         <Route element={<Posts />} path="/posts" />
+        <Route path="/posts/:postId" element={<SinglePost />} />
       </Routes>
     </BrowserRouter>
   );
